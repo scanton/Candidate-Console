@@ -24,22 +24,18 @@ export default function HomePage() {
           <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
             <div className="space-y-4">
               <Badge variant="outline">{siteConfig.tagline}</Badge>
-              <h1 className="font-serif text-4xl leading-tight tracking-tight md:text-5xl">
-                Evidence-backed career stories for serious hiring conversations
-              </h1>
-              <p className="max-w-3xl text-lg text-muted-foreground">{siteConfig.valueProp}</p>
-              <p className="text-sm text-muted-foreground">
-                Paste a job description to preview an honest fit report. Mock scoring for this phase.
-              </p>
+              <h1 className="font-serif text-4xl leading-tight tracking-tight md:text-5xl">Evidence-backed career stories.</h1>
+              <p className="max-w-3xl text-lg text-muted-foreground">{siteConfig.shortIntro}</p>
+              <p className="text-sm text-muted-foreground">{siteConfig.valueProp}</p>
               <div className="flex flex-wrap gap-3">
-                <Link href="#hero-stories">
-                  <Button>Explore Hero Stories</Button>
-                </Link>
                 <Link href="/hiring">
-                  <Button variant="outline">Hiring Manager Mode</Button>
+                  <Button>Hiring Manager Mode</Button>
                 </Link>
-                <Link href="/evidence">
-                  <Button variant="ghost">View Evidence</Button>
+                <Link href="#hero-stories">
+                  <Button variant="outline">Explore Hero Stories</Button>
+                </Link>
+                <Link href="/evidence" className="self-center text-sm text-muted-foreground underline-offset-4 hover:underline">
+                  Browse Evidence
                 </Link>
                 <Link href="/fit-check">
                   <Button variant="ghost">Fit Check Preview</Button>

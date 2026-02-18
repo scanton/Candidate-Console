@@ -23,11 +23,11 @@ html {
 }
 
 body {
-  @apply bg-background text-foreground antialiased text-[1.02rem] leading-7;
+  @apply text-foreground;
 }
 
 .prose-shell {
-  @apply max-w-none text-[1.08rem] leading-8;
+  @apply max-w-none;
 }
 
 .prose-shell :where(h2, h3) {
@@ -54,9 +54,9 @@ body {
   @apply underline underline-offset-4;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 

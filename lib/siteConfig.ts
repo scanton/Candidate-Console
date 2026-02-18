@@ -1,6 +1,7 @@
 export const siteConfig = {
-  name: "Candidate Console",
+  siteName: "Candidate Console",
   tagline: "Evidence-backed career stories",
+  shortIntro: "Career stories and evidence designed for clear, honest hiring evaluation.",
   valueProp: "Structured stories, proof artifacts, and an honest fit preview for hiring decisions.",
   hiring: {
     intro:

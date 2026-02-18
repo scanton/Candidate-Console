@@ -6,6 +6,7 @@ Sleek Next.js App Router portfolio for hero stories, evidence browsing, and mock
 
 - Next.js (App Router) + TypeScript
 - Tailwind CSS + shadcn-style UI components
+- Tailwind Typography plugin for long-form readability
 - Framer Motion (subtle transitions)
 - Contentlayer for MDX hero stories
 - Zod for JSON schema validation
@@ -18,6 +19,8 @@ Sleek Next.js App Router portfolio for hero stories, evidence browsing, and mock
 ```bash
 pnpm install
 ```
+
+This project runs `prisma generate` automatically on install and before `dev`/`build`.
 
 2. Run Prisma migration (local SQLite):
 
@@ -60,6 +63,7 @@ pnpm prisma:studio
 - `/hiring` structured hiring-manager evaluation view
 - `/fit-check` minimal JD-to-report demo UI
 - `/reports/[publicSlug]` public report page with copy-summary action
+- Responsive navbar with mobile `More` dropdown to prevent wrapping
 
 ## Report Soft Gate
 

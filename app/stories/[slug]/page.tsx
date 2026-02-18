@@ -64,7 +64,7 @@ export default async function StoryDetailPage({ params }: StoryPageProps) {
 
       <FadeIn>
         <section className="rounded-lg border bg-card p-6 md:p-8">
-          <div className="prose-shell mx-auto max-w-3xl">
+          <div className="prose prose-zinc prose-lg max-w-3xl dark:prose-invert prose-shell mx-auto">
             <MdxBody code={story.body.code} />
           </div>
         </section>
