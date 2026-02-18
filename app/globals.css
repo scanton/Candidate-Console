@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 29% 98%;
+  --foreground: 222 32% 14%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 32% 14%;
+  --muted: 210 16% 95%;
+  --muted-foreground: 218 12% 37%;
+  --border: 220 18% 88%;
+  --primary: 220 34% 24%;
+  --primary-foreground: 0 0% 100%;
+}
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+}
+
+.prose-shell h2 {
+  @apply mt-8 text-2xl font-semibold tracking-tight;
+}
+
+.prose-shell p {
+  @apply mt-3 leading-7 text-muted-foreground;
+}
+
+@media print {
+  nav,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+  }
+
+  main {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}

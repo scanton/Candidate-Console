@@ -1,0 +1,87 @@
+[
+  {
+    "id": "ev_console_repo",
+    "type": "repo",
+    "title": "Candidate Console Source Repository",
+    "description": "Production-grade Next.js implementation with typed content ingestion and report storage.",
+    "url": "https://github.com/example/candidate-console",
+    "date": "2025-09-01T00:00:00.000Z",
+    "tags": ["nextjs", "typescript", "architecture"],
+    "relatedStorySlugs": ["platform-rebuild", "signal-driven-hiring"]
+  },
+  {
+    "id": "ev_design_spec",
+    "type": "doc",
+    "title": "System Design Specification",
+    "description": "Detailed architecture and data flow document for hiring intelligence workflows.",
+    "tags": ["system-design", "documentation"],
+    "date": "2024-06-12T00:00:00.000Z",
+    "relatedStorySlugs": ["platform-rebuild"]
+  },
+  {
+    "id": "ev_launch_demo",
+    "type": "demo",
+    "title": "Launch Readiness Demo",
+    "description": "End-to-end product walkthrough delivered to leadership before GA launch.",
+    "tags": ["go-to-market", "communication"],
+    "relatedStorySlugs": ["platform-rebuild", "global-rollout"]
+  },
+  {
+    "id": "ev_scaling_talk",
+    "type": "talk",
+    "title": "Scaling Candidate Experience Talk",
+    "description": "Conference talk on balancing personalization and standardization at hiring scale.",
+    "url": "https://example.com/talk",
+    "tags": ["public-speaking", "strategy"],
+    "relatedStorySlugs": ["global-rollout"]
+  },
+  {
+    "id": "ev_case_performance",
+    "type": "case-study",
+    "title": "Performance Improvement Case Study",
+    "description": "Case study showing 42% faster recruiter cycle time through workflow redesign.",
+    "tags": ["operations", "metrics"],
+    "relatedStorySlugs": ["signal-driven-hiring"]
+  },
+  {
+    "id": "ev_article_culture",
+    "type": "article",
+    "title": "Building Evidence-Driven Hiring Culture",
+    "description": "Article outlining a repeatable framework for structured talent decisions.",
+    "url": "https://example.com/article",
+    "tags": ["leadership", "hiring"],
+    "relatedStorySlugs": ["signal-driven-hiring"]
+  },
+  {
+    "id": "ev_repo_toolkit",
+    "type": "repo",
+    "title": "Interview Toolkit Repository",
+    "description": "Toolkit of interview rubrics and calibration scripts adopted across teams.",
+    "tags": ["hiring", "tooling"],
+    "relatedStorySlugs": ["global-rollout"]
+  },
+  {
+    "id": "ev_doc_playbook",
+    "type": "doc",
+    "title": "Operations Playbook",
+    "description": "Playbook that standardized interview planning, feedback quality, and debrief rigor.",
+    "tags": ["process", "operations"],
+    "relatedStorySlugs": ["global-rollout", "signal-driven-hiring"]
+  },
+  {
+    "id": "ev_demo_scorecard",
+    "type": "demo",
+    "title": "Scorecard Builder Demo",
+    "description": "Interactive demo proving recruiter + hiring manager alignment improved decision quality.",
+    "tags": ["ux", "product"],
+    "relatedStorySlugs": ["signal-driven-hiring"]
+  },
+  {
+    "id": "ev_other_ref",
+    "type": "other",
+    "title": "Reference Packet",
+    "description": "Compiled references, recommendation excerpts, and stakeholder endorsements.",
+    "tags": ["trust", "leadership"],
+    "relatedStorySlugs": ["platform-rebuild", "global-rollout"]
+  }
+]

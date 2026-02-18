@@ -1,0 +1,43 @@
+---
+title: "Rebuilt the Candidate Platform Without Pausing Hiring"
+timeframe: "2022-2024"
+role: "Staff Product Engineer"
+org: "Northfield Labs"
+summary: "Led a full rebuild of the recruiting platform while preserving uptime and delivery velocity across three business units."
+highlights:
+  - "Migrated core workflows to a modular Next.js stack with zero downtime release strategy."
+  - "Improved page performance by 38% and reduced recruiter task time by 31%."
+  - "Established evidence-linked storytelling for executive and hiring panel visibility."
+tags:
+  - "platform"
+  - "nextjs"
+  - "leadership"
+  - "delivery"
+metrics:
+  - label: "Workflow Completion"
+    value: "+28%"
+  - label: "Median Load Time"
+    value: "-38%"
+  - label: "Launch Defects"
+    value: "0 Sev-1"
+evidenceIds:
+  - "ev_console_repo"
+  - "ev_design_spec"
+  - "ev_launch_demo"
+featured: true
+---
+
+## Problem
+Legacy systems slowed recruiters and made candidate signals hard to trust.
+
+## Constraints
+Business continuity requirements ruled out downtime or phased team pauses.
+
+## Approach
+I split the migration by workflow boundaries, introduced typed contracts, and shipped incremental slices behind feature flags.
+
+## Results
+Recruiter throughput increased while reliability and reporting quality improved.
+
+## Lessons
+Architecture only sticks when paired with simple operating rules and visible evidence.

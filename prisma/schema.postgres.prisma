@@ -1,0 +1,31 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model JobDescriptionSubmission {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  rawText   String
+  source    String   @default("site")
+  userAgent String?
+  ip        String?
+
+  reports ShareableReport[]
+}
+
+model ShareableReport {
+  id           String   @id @default(cuid())
+  createdAt    DateTime @default(now())
+  submissionId String
+  modelUsed    String?
+  fitScore     Int
+  resultJson   Json
+  publicSlug   String   @unique
+
+  submission JobDescriptionSubmission @relation(fields: [submissionId], references: [id], onDelete: Cascade)
+}
