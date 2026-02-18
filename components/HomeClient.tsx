@@ -36,8 +36,8 @@ export function HomeClient({ stories, tags }: { stories: Story[]; tags: string[]
 
   return (
     <div className="space-y-6">
-      <div className="grid gap-4 rounded-lg border border-border bg-card p-5 md:grid-cols-3">
-        <Input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search stories, themes, outcomes..." />
+      <div className="grid gap-4 rounded-lg border border-border bg-card p-5 md:grid-cols-3 md:p-6">
+        <Input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search stories, themes, outcomes..." className="text-base" />
         <div className="md:col-span-2">
           <TagFilters tags={tags} activeTag={activeTag} onTag={setActiveTag} />
         </div>

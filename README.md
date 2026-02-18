@@ -6,6 +6,7 @@ Sleek Next.js App Router portfolio for hero stories, evidence browsing, and mock
 
 - Next.js (App Router) + TypeScript
 - Tailwind CSS + shadcn-style UI components
+- Framer Motion (subtle transitions)
 - Contentlayer for MDX hero stories
 - Zod for JSON schema validation
 - Prisma + SQLite (local), with a Postgres-ready schema variant
@@ -56,7 +57,16 @@ pnpm prisma:studio
 - `/evidence` evidence library filters
 - `/resume` print-friendly resume
 - `/about/what-im-not` boundary statement page
+- `/hiring` structured hiring-manager evaluation view
+- `/fit-check` minimal JD-to-report demo UI
 - `/reports/[publicSlug]` public report page with copy-summary action
+
+## Report Soft Gate
+
+- `/reports/[publicSlug]` includes a lightweight confirmation gate on first view.
+- Acceptance is stored in `localStorage`:
+  - `candidate_console_report_gate:<slug>`
+  - Optional global acceptance: `candidate_console_report_gate:global`
 
 ## Database Notes
 
